@@ -1,0 +1,28 @@
+
+body {
+  direction: rtl;
+  text-align: right;
+  font-family: 'Tahoma', 'Arial', sans-serif;
+}
+
+/* تبديل مواضع العناصر */
+nav ul {
+  padding-right: 0;
+}
+
+.float-right {
+  float: left !important;
+}
+
+.float-left {
+  float: right !important;
+}
+
+.text-left {
+  text-align: right !important;
+}
+
+.text-right {
+  text-align: left !important;
+}
+

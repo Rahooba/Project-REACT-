@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+background: linear-gradient(to bottom, #f9f3ff, #ffffff);
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  color: #2d0320;
+  font-family: 'Tajawal', 'Arial', sans-serif;
+  direction: rtl;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #6a0dad; /* Rich purple */
+  border: none;
+  transition: all 0.3s;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #4b0082; /* Darker purple */
+}
+
+/* Sections */
+.section-dark {
+  background-color: #f5f5f5; /* Light gray/white */
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #1a1a1a !important; /* Black */
+  border-bottom: 2px solid #6a0dad !important; /* Purple */
+  padding: 0.5rem 1rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.navbar-nav {
+  gap: 0.5rem;
+}
+
+.navbar-brand {
+  color: #ffffff !important; /* White */
+  font-weight: 500;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.nav-link {
+  color: #ffffff !important; /* White */
+  font-weight: 500;
+  padding: 0.5rem 1rem !important;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffffff !important;
+  background-color: rgba(106, 13, 173, 0.2) !important; /* Light purple */
+  transform: scale(1.05);
+}
+
+.nav-link.active {
+  color: #6a0dad !important; /* Purple */
+  background-color: rgba(106, 13, 173, 0.1) !important;
+  transform: scale(0.95);
+}
+
+.navbar-toggler {
+  border-color: #6a0dad !important; /* Purple */
+  background-color: #6a0dad; /* Purple */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23ffffff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* Large screen effects */
+@media (min-width: 992px) {
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #6a0dad; /* Purple */
+    transition: width 0.3s ease;
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+  }
+}
+
+/* Logo effects */
+.navbar-brand img {
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 0 5px rgba(106, 13, 173, 0));
+  transition: all 0.3s ease;
+}
+
+.navbar-brand:hover img {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 8px rgba(106, 13, 173, 0.7));
+}
+
+/* Background color class */
+.bg-dark {
+  background-color: #1a1a1a !important; /* Black */
+}
+
+/* Text styles */
+.navbar-brand {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: #ffffff !important;
+  font-size: 1.2rem;
+}
+
+.nav-link {
+  color: #f5f5f5 !important;
+  font-weight: 500;
+  position: relative;
+  margin: 0 0.5rem;
+}
+
+.nav-link:hover {
+  color: #ffffff !important;
+}
+
+.nav-link::after {
+  background-color: #6a0dad; /* Purple */
+}
