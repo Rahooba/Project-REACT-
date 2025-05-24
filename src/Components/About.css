@@ -1,0 +1,62 @@
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes floating {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.about-container {
+  background: linear-gradient(to right, black, purple);
+  color: white;
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.about-title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.about-description {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.about-details {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  animation: floating 3s infinite ease-in-out;
+
+}
+.about-details ul{
+  list-style: none;
+}
+
+.silk-history {
+  margin-top: 30px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.image-slideshow {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.slideshow-image {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slideshow-image:hover {
+  transform: scale(1.1);
+}
